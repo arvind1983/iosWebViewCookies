@@ -8,6 +8,14 @@ exports.getCookies = function(success, error) {
     exec(success, error, "ModusEcho", "getCookies");
 };
 
+exports.saveHTTPCookies = function(success, error) {
+    exec(success, error, "ModusEcho", "saveHTTPCookies");
+};
+
+exports.loadHTTPCookies = function(success, error) {
+    exec(success, error, "ModusEcho", "loadHTTPCookies");
+};
+
 exports.echojs = function(arg0, success, error) {
     if (arg0 && typeof(arg0) === 'string' && arg0.length > 0) {
         success(arg0);
