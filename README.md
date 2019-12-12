@@ -1,6 +1,6 @@
 Extended based on the example plugin from Modus Labs
 
-Example plugin was used just for the structure of the plugin
+Example plugin was used for the structure of the plugin
 ---
 # Cordova Plugin Example
 
