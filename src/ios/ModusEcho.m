@@ -68,7 +68,7 @@
     }
     
     // show number of cookies
-    if(cookieDictionary.count)
+    if(cookieDictionary.count>0)
     {
         UIAlertView *toast = [
             [UIAlertView alloc] initWithTitle:@"Cookies"
