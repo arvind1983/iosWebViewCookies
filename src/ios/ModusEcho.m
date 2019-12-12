@@ -15,7 +15,7 @@
     } else {
         /* http://stackoverflow.com/questions/18680891/displaying-a-message-in-ios-which-has-the-same-functionality-as-toast-in-android */
         UIAlertView *toast = [
-            [UIAlertView alloc] initWithTitle:@""
+            [UIAlertView alloc] initWithTitle:@"Echo"
             message:msg
             delegate:nil
             cancelButtonTitle:nil
