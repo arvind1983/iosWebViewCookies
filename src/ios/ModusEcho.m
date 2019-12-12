@@ -13,7 +13,7 @@
     if (msg == nil || [msg length] == 0) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
     } else {
-        /* http://stackoverflow.com/questions/18680891/displaying-a-message-in-ios-which-has-the-same-functionality-as-toast-in-android */
+        
         UIAlertView *toast = [
             [UIAlertView alloc] initWithTitle:@"Echo"
             message:msg
@@ -72,7 +72,7 @@
     {
         UIAlertView *toast = [
             [UIAlertView alloc] initWithTitle:@"Cookies"
-            message:@"found cookies: "
+            message:@"Found cookies!"
             delegate:nil
             cancelButtonTitle:nil
             otherButtonTitles:nil, nil];
