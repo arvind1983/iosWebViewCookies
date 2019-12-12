@@ -33,7 +33,7 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-- (void)getCookies:(CDVInvokedUrlCommand*)command
+- (void)showMessageAlert:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
         
