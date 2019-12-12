@@ -36,13 +36,8 @@
 - (void)getCookies:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
-    NSString* msg = [command.arguments objectAtIndex:0];
-
-    if (msg == nil || [msg length] == 0) {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
-    } else {
-        /* http://stackoverflow.com/questions/18680891/displaying-a-message-in-ios-which-has-the-same-functionality-as-toast-in-android */
-        UIAlertView *toast = [
+        
+    UIAlertView *toast = [
             [UIAlertView alloc] initWithTitle:@"Cookies"
             message:"getting cookies"
             delegate:nil
@@ -56,7 +51,6 @@
         });
         
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
-    }
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
