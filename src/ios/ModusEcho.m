@@ -39,7 +39,7 @@
         
     UIAlertView *toast = [
             [UIAlertView alloc] initWithTitle:@"Cookies"
-            message:"getting cookies"
+            message:@"getting cookies"
             delegate:nil
             cancelButtonTitle:nil
             otherButtonTitles:nil, nil];
@@ -50,7 +50,7 @@
             [toast dismissWithClickedButtonIndex:0 animated:YES];
         });
         
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
